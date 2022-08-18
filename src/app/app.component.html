@@ -1,0 +1,5 @@
+<div class="container">
+    <app-header></app-header>
+    <app-home *ngIf="toggler" (toggler) = "onTogglerChange($event)"></app-home>
+    <router-outlet *ngIf="!toggler" ></router-outlet>
+</div>
